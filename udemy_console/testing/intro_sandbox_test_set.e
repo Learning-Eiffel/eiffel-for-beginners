@@ -10,32 +10,6 @@ inherit
 
 feature -- Test routines
 
-	what_are_assertions
-			-- A demonstration of using test assertions.
-		note
-			definition: "Assertion = Stating what must hold or be True."
-		do
-			assert ("one_plus_one_is_two", 1 + 1 = 2)
-				--		▲ Tag				▲ Value of expression that must evaluate to True
-				--
-				-- The `assert' can only PASS or FAIL. A failure happens when
-				--	the "Value" evaluates to False. In this case, a failure
-				--	message will appear in the Outputs context-tool (below)
-
---			assert ("one_plus_one_is_two", 1 + 1 = 3)
-				-- EXAMPLE: what_are_assertions (INTRO_SANDBOX_TEST_SET): FAIL (one_plus_one_is_two)
-				-- 	If the `assert' above is uncommented, then it will produce the
-				-- 	failure-message seen in the EXAMPLE above.
-
-				-- Here are more examples of more complex but useful assertions.
-
-			assert_equal ("true_is_true", 	2, 			1 + 1)
-				--			▲ Tag			▲ Expected	▲ Actual	Assertion is True if
-				--							  Value		  Value		 Expected = Actual
-
---			assert_equal ("true_is_true", 	3, 			1 + 1)
-		end
-
 	basic_integer_expressions
 			-- Demonstration of basic INTEGER expressions.
 		do
